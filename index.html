@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+
+<body>
+    <div class = "input-empty" id = "input-empty">
+        <p>Task is empty</p>
+        <button id = 'close-input-empty'>OK</button>
+    </div>
+    <main>
+        <nav>
+            <button class = "pending" id = "pending">Pending</button>
+            <button class = "completed" id = "completed">Completed</button>
+        </nav>
+
+        <div class = "todo">
+            <section class = "task-container">
+                <div class = "pending-task" id = "pending-task"></div>
+                <div class = "completed-task" id = "completed-task"></div>
+            </section>
+        </div>
+        <section class = "input">
+            <form>
+                <label for = "task-input"></label>
+                <input class = "task-input" id = "task-input" placeholder = "Add a task" type = "text">
+            </form>
+        </section>
+    </main>
+</body>
+<script src = "src.js"></script>
+</html>
